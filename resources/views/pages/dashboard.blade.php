@@ -2,11 +2,11 @@
 @section('content')
 <div class="main-content">
     <div class="breadcrumb">
-        <h1 class="mr-2">#ABSENSI_ONLINE</h1> <h6 class="mr-2">SMKN1 Wongsorejo</h6>
-        <ul>
+        <h1 class="mr-2">#ABSENSI_ONLINE</h1> <h6 class="mr-2">SMK Negeri Wongsorejo</h6>
+        {{-- <ul>
             <li><a href="#">Dashboard</a></li>
             <li>Selamat Datang</li>
-        </ul>
+        </ul> --}}
     </div>
     <div class="separator-breadcrumb border-top"></div>
     <div class="row">

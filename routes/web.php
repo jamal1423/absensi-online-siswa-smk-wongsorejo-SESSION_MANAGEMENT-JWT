@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AbsenController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ScanController;
@@ -32,6 +33,10 @@ Route::controller(DashboardController::class)->group(function () {
     Route::get('dashboard', 'data_dashboard');
     Route::get('get-data-dashboard', 'get_data_dashboard');
     Route::get('get-cek-map', 'cek_map');
+});
+
+Route::controller(AbsenController::class)->group(function () {
+    Route::get('riwayat-kehadiran', 'riwayat_absensi');
 });
 
 Route::controller(ScanController::class)->group(function () {

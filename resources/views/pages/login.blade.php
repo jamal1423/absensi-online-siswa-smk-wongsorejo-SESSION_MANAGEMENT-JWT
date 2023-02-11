@@ -6,13 +6,14 @@
         <div class="col-md-6">
             <div class="p-4">
                 <div class="auth-logo text-center mb-4"><img src="{{ asset('gambar-umum/logo.png') }}" alt=""></div>
+                <h3 class="text-center mt-3 mb-5">SMK Negeri Wongsorejo</h3>
                 @if(Session::has('loginError'))
                     <div class="alert alert-danger">
                         <button class="close" data-dismiss="alert"></button>
                         <strong>Periksa username / password Anda.
                     </div>
                 @endif
-                <h1 class="mb-3 text-18">Login</h1>
+                {{-- <h1 class="mb-3 text-18">Login</h1> --}}
                 <form method="post" action="{{ url('/login') }}">
                     @method('post')
                     @csrf
